@@ -5,7 +5,7 @@ import { TEAM_DATA, SUPERVISOR_DATA } from '../data/team.js';
 export default function AboutTeamView({ lang = "vi" }) {
   const t = LANG[lang].team;
   const isVi = lang === "vi";
-  
+
   // Combine all members to show them on the same level
   // Mapping SUPERVISOR_DATA to match TEAM_DATA model
   const combinedMembers = [
@@ -59,13 +59,13 @@ export default function AboutTeamView({ lang = "vi" }) {
                 <div style={{ fontSize: 12, color: "var(--text3)" }}>Ho Chi Minh University of Banking (HUB) · Est. 1976</div>
               </div>
             </div>
-            
+
             {/* Faculty Logo */}
             <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 20px", background: "rgba(192,132,252,0.06)", border: "1px solid rgba(192,132,252,0.2)", borderRadius: 12, flex: "1 1 300px" }}>
               <div style={{ width: 60, height: 60, borderRadius: 6, background: "rgba(255,255,255,0.05)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, overflow: "hidden" }}>
                 <img src="/images/logo_khoa.png?v=2" alt="Faculty Logo" style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }} onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling && (e.target.nextSibling.style.display = 'block') }} />
                 {/* Fallback text if image not found */}
-                <div style={{ display: "none", fontSize: 10, textAlign: "center", color: "var(--text3)", padding: 4 }}>Logo<br/>Khoa</div>
+                <div style={{ display: "none", fontSize: 10, textAlign: "center", color: "var(--text3)", padding: 4 }}>Logo<br />Khoa</div>
               </div>
               <div>
                 <div style={{ fontSize: 15, fontWeight: 700, color: "var(--purple)", marginBottom: 4 }}>{t.faculty}</div>
@@ -98,7 +98,7 @@ export default function AboutTeamView({ lang = "vi" }) {
         </div>
 
 
-        
+
         {/* Competition Context */}
         <div style={{ display: "flex", justifyContent: "center", animation: "fadeInUp 0.6s 0.5s both" }}>
           <div style={{ background: "linear-gradient(to right, rgba(34, 211, 238, 0.05), rgba(59, 130, 246, 0.05))", border: "1px solid rgba(34, 211, 238, 0.2)", borderRadius: 16, padding: "32px 48px", maxWidth: 800, textAlign: "center" }}>
