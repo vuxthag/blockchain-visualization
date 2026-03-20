@@ -53,7 +53,7 @@ export default function AboutTeamView({ lang = "vi" }) {
           <div style={{ display: "flex", flexWrap: "wrap", gap: 16, marginBottom: 32, animation: "fadeInUp 0.5s ease" }}>
             {/* HUB Logo */}
             <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 20px", background: "rgba(34,211,238,0.06)", border: "1px solid rgba(34,211,238,0.2)", borderRadius: 12, flex: "1 1 300px" }}>
-              <img src="/images/logo_hub.png" alt="HUB" style={{ height: 60, borderRadius: 6, objectFit: "contain" }} />
+              <img src="/images/logo_hub.png?v=2" alt="HUB" style={{ height: 60, borderRadius: 6, objectFit: "contain" }} />
               <div>
                 <div style={{ fontSize: 15, fontWeight: 700, color: "var(--cyan)", marginBottom: 4 }}>{t.uni}</div>
                 <div style={{ fontSize: 12, color: "var(--text3)" }}>Ho Chi Minh University of Banking (HUB) · Est. 1976</div>
@@ -63,7 +63,7 @@ export default function AboutTeamView({ lang = "vi" }) {
             {/* Faculty Logo */}
             <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 20px", background: "rgba(192,132,252,0.06)", border: "1px solid rgba(192,132,252,0.2)", borderRadius: 12, flex: "1 1 300px" }}>
               <div style={{ width: 60, height: 60, borderRadius: 6, background: "rgba(255,255,255,0.05)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, overflow: "hidden" }}>
-                <img src="/images/logo_khoa.png" alt="Faculty Logo" style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }} onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling && (e.target.nextSibling.style.display = 'block') }} />
+                <img src="/images/logo_khoa.png?v=2" alt="Faculty Logo" style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }} onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling && (e.target.nextSibling.style.display = 'block') }} />
                 {/* Fallback text if image not found */}
                 <div style={{ display: "none", fontSize: 10, textAlign: "center", color: "var(--text3)", padding: 4 }}>Logo<br/>Khoa</div>
               </div>

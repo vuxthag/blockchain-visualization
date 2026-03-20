@@ -120,7 +120,7 @@ export default function App() {
         <div style={{ maxWidth: 1100, margin: "0 auto", fontSize: 12, color: "var(--text3)", lineHeight: 2 }}>
           <strong style={{ color: "var(--cyan)" }}>CryptoHash Demo</strong> · {t.footer} &nbsp;·&nbsp;
           {t.footerBuilt} &nbsp;·&nbsp;
-          <img src="/images/logo_hub.png" alt="HUB Logo" style={{ height: 20, verticalAlign: "middle", marginLeft: 6, borderRadius: 3 }} />
+          <img src="/images/logo_hub.png?v=2" alt="HUB Logo" style={{ height: 20, verticalAlign: "middle", marginLeft: 6, borderRadius: 3 }} />
           <span style={{ marginLeft: 6, fontSize: 11 }}>{t.footerUni}</span>
         </div>
       </footer>
